@@ -48,6 +48,7 @@
 		There was probably a reason it wasn't manufactured this short to begin with. \
 		Despite the terrible nature of the modification, the weapon seems otherwise in good condition."
 
+
 	icon_state = "sakhno"
 	inhand_icon_state = "sakhno"
 	worn_icon_state = "sakhno"
@@ -63,6 +64,19 @@
 	var/can_jam = FALSE
 
 	SET_BASE_PIXEL(-8, 0)
+
+/obj/item/gun/ballistic/rifle/boltaction/mavzer
+	name = "Turkish Mavzer"
+	desc = "Türk askerinin, I.Dünya Savaşında ve Kurtuluş Savaşında yoğunlukla kullandığı servis tüfeğü."
+	can_be_sawn_off = FALSE
+
+	icon = 'icons/psychonaut/obj/weapons/guns/wide_guns.dmi'
+	icon_state = "mavzer"
+	lefthand_file = 'icons/psychonaut/mob/inhands/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/psychonaut/mob/inhands/weapons/guns_righthand.dmi'
+	inhand_icon_state = "mavzer"
+	worn_icon = 'icons/psychonaut/mob/clothing/back.dmi'
+	worn_icon_state = "mavzer"
 
 /obj/item/gun/ballistic/rifle/boltaction/add_bayonet_point()
 	AddComponent(/datum/component/bayonet_attachable, offset_x = 32, offset_y = 12)
